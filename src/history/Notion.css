@@ -1,0 +1,39 @@
+.product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin:10px 0;
+    background-color: white;
+    position:relative;
+    width: 100%;
+}
+
+.delete-btn{
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    line-height: 25px;
+    padding: 2px 7px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .delete-btn{
+    opacity: 1;
+}
+
+.plus{
+    border-right: 5px solid #2ecc71;
+}
+
+.minus{
+    border-right: 5px solid #c0392b;
+}
